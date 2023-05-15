@@ -4,7 +4,7 @@ LP Desenvolvida em React.
 
 ## Demo
 
-[Link]([](https://criativ-box-lp.vercel.app/))
+[Link]([Clique aqui](https://criativ-box-lp.vercel.app/))
 
 ## Começando
 
