@@ -1,30 +1,30 @@
-# Pizza-for-president Landing page made with React
+# Landing Page da CriativBox Pizzarias
 
-A Pizza Site built with React.
+LP Desenvolvida em React.
 
 ## Demo
 
-[Link](https://pizza-for-president.vercel.app/)
+[Link]([Clique aqui](https://criativ-box-lp.vercel.app/))
 
-## Getting Started
+## Começando
 
-Clone this repo, and make sure to run the commands mentioned below from your terminal within the root project directory.
+Clone este repositório e certifique-se de executar os comandos mencionados abaixo em seu terminal no diretório raiz do projeto.
 
-### Prerequisites
+### Pré-requisitos
 
-Make use Node.js is installed, and npm is up to date:
+Use o Node.js instalado e o npm atualizado:
 
     npm@latest -g
 
-Run the provided setup script:
+Execute o script de configuração fornecido:
 
     npm run setup
 
-Run and debug the application with the dev script:
+Execute e depure o aplicativo com o script dev:
 
     npm run dev
 
-Build and run the compiled version with the build and start scripts:
+Compile e execute a versão compilada com os scripts de compilação e inicialização:
 
     npm run build
     npm run start
