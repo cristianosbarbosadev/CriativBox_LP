@@ -4,7 +4,7 @@ LP Desenvolvida em React.
 
 ## Demo
 
-[Link](https://pizza-for-president.vercel.app/)
+[Link]([](https://criativ-box-lp.vercel.app/))
 
 ## Começando
 
