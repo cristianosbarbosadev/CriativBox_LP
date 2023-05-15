@@ -14,13 +14,15 @@ export const NavLink = styled(Link)`
 	color: #fff;
 	font-size: 2rem;
 	display: flex;
+	flex-wrap:	wrap;
+	justify-content: center;
 	align-items: center;
 	text-decoration: none;
 	cursor: pointer;
 
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 768px) {
 		position: absolute;
-		top: 10px;
+		top: 60px;
 		left: 25px;
 	}
 `;
