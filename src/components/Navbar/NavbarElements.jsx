@@ -14,7 +14,7 @@ export const NavLink = styled(Link)`
 	color: #fff;
 	font-size: 2rem;
 	display: flex;
-	flex-wrap:	wrap;
+	
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
