@@ -9,6 +9,7 @@ import {
 	SidebarRoute,
 } from './SideBarElements';
 
+
 function Sidebar({ isOpen, toggle }) {
 	return (
 		<SidebarContainer isOpen={isOpen}>

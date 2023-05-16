@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.f4c97dad.js",
+    "main.js": "/static/js/main.694bf8dd.js",
     "static/media/pizza-3.jpg": "/static/media/pizza-3.f2f9b9a49128f877c57f.jpg",
+    "static/media/Logo_final.png": "/static/media/Logo_final.e2732846cf0d68f4091f.png",
     "static/media/featured3.jpg": "/static/media/featured3.66d68644270582e9ce8d.jpg",
-    "static/media/sweet-2.jpg": "/static/media/sweet-2.d5cf1ad2859c7af98ea3.jpg",
-    "static/media/sweet3.jpg": "/static/media/sweet3.c495c74278ec63462c5e.jpg",
     "static/media/americana.jpg": "/static/media/americana.0076ce8933cd00a7cca4.jpg",
-    "static/media/sweet-3.jpg": "/static/media/sweet-3.badeecbe98eb1e099fce.jpg",
     "static/media/oitavada.jfif": "/static/media/oitavada.5da0677a86268f84f77f.jfif",
     "index.html": "/index.html",
-    "main.f4c97dad.js.map": "/static/js/main.f4c97dad.js.map"
+    "main.694bf8dd.js.map": "/static/js/main.694bf8dd.js.map"
   },
   "entrypoints": [
-    "static/js/main.f4c97dad.js"
+    "static/js/main.694bf8dd.js"
   ]
 }
