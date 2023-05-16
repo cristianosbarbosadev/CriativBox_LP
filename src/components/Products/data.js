@@ -1,5 +1,5 @@
 import americana from '../../images/americana.jpg';
-import oitavada from '../../images/oitavada.jfif';
+import oitavada from '../../images/oitavada.jpg';
 
 
 export const productData = [
