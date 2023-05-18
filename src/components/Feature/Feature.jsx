@@ -15,13 +15,14 @@ function Feature() {
 		<FeatureContainer>
 			<h1>Gostou das vantagens</h1>
 			<p>Faça seu cadastro hoje mesmo e aumente suas chances de receber nossas caixas gratuitas!.</p>
+
 			<FeatureButton onClick={handleOpen} >Faça seu cadastro</FeatureButton>
 			<Backdrop
         sx={{ backgroundColor:"#fff", zIndex: theme => theme.zIndex.drawer + 1 }}
 				
         open={open}
         
-        to="/FomrRegister"
+        to="/FomrRegist"
         invisible={true}
       >
 				<FormRegister />
