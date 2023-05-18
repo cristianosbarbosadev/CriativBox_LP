@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/static/js/main.1d8cc559.js",
+    "static/media/pizza-3.jpg": "/static/media/pizza-3.f2f9b9a49128f877c57f.jpg",
+    "static/media/Logo_final.png": "/static/media/Logo_final.e2732846cf0d68f4091f.png",
+    "static/media/featured3.jpg": "/static/media/featured3.66d68644270582e9ce8d.jpg",
+    "static/media/americana.jpg": "/static/media/americana.0076ce8933cd00a7cca4.jpg",
+    "static/media/oitavada.jpg": "/static/media/oitavada.1963642c726888567cfb.jpg",
+    "index.html": "/index.html",
+    "main.1d8cc559.js.map": "/static/js/main.1d8cc559.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.1d8cc559.js"
+  ]
+}
