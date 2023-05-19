@@ -3,6 +3,29 @@ import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 import { createTheme } from '@mui/material/styles';
 import { FaTimes } from 'react-icons/fa';
 
+export const FormRegisterThanksContainer = styled.div`
+  background: #10242e;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 1rem;
+
+  h1 {
+    font-size: clamp(3rem, 5vw, 5rem);
+  }
+
+  p {
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 3vw, 2rem);
+  }
+`;
+
 export const FormRegisterContainer = styled.div`
   background: #fff;
   height: 100vh;
@@ -41,6 +64,18 @@ export const Icon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
+`;
+
+export const FormRegisterThanksHeading = styled.h1`
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #f46f0a;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 1rem;
+    margin-top: 26rem;
+  }
 `;
 
 export const FormRegisterHeading = styled.h1`

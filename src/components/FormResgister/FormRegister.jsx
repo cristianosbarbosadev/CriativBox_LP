@@ -80,6 +80,14 @@ function FormRegister() {
     //     });
   };
 
+  const estilosBox = {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 2,
+    justifyContent: 'center',
+  };
+
   return (
     <FormRegisterContainer>
       <Icon onClick={handleClose}>
@@ -93,20 +101,12 @@ function FormRegister() {
       {msg ? <p>{msg}</p> : ''} */}
 
       {/* Inputs */}
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          flexWrap: 'wrap',
-          gap: 2,
-          justifyContent: 'center',
-        }}
+      <form
+        action="https://formsubmit.co/criativbox@gmail.com "
+        method="POST"
+        onChange={sendMsg}
       >
-        <form
-          action="https://formsubmit.co/criativbox@gmail.com "
-          method="POST"
-          onChange={sendMsg}
-        >
+        <Box sx={estilosBox}>
           <ThemeProvider theme={customTheme(outerTheme)}>
             <TextField
               name="nomePizzaria"
@@ -114,101 +114,83 @@ function FormRegister() {
               type="text"
               onChange={valorInput}
             />
-          </ThemeProvider>
 
-          <ThemeProvider theme={customTheme(outerTheme)}>
             <TextField
               label="Nome do responsável"
               type="text"
               name="nomeResponsavel"
               onChange={valorInput}
             />
-          </ThemeProvider>
 
-          <ThemeProvider theme={customTheme(outerTheme)}>
             <TextField
               label="Telefone"
               type="tel"
               name="telefone"
               onChange={valorInput}
             />
-          </ThemeProvider>
 
-          <ThemeProvider theme={customTheme(outerTheme)}>
             <TextField
               label="Email"
               type="email"
               name="email"
               onChange={valorInput}
             />
-          </ThemeProvider>
 
-          <ThemeProvider theme={customTheme(outerTheme)}>
             <TextField
               label="Endereço"
               type="text"
               name="endereco"
               onChange={valorInput}
             />
-          </ThemeProvider>
 
-          <ThemeProvider theme={customTheme(outerTheme)}>
             <TextField
               label="Raio de entrega"
               type="number"
               name="raioEntrega"
               onChange={valorInput}
             />
-          </ThemeProvider>
 
-          <ThemeProvider theme={customTheme(outerTheme)}>
             <TextField
               label="Consumo mês"
               type="number"
               name="consumoMes"
               onChange={valorInput}
             />
-          </ThemeProvider>
 
-          <ThemeProvider theme={customTheme(outerTheme)}>
             <TextField
               label="Consumo fim de semana"
               type="number"
               name="consumoFimDeSemana"
               onChange={valorInput}
             />
-          </ThemeProvider>
 
-          <ThemeProvider theme={customTheme(outerTheme)}>
             <TextField
               label="Valor médio"
               type="number"
               name="valorMedio"
               onChange={valorInput}
             />
-          </ThemeProvider>
 
-          <ThemeProvider theme={customTheme(outerTheme)}>
             <TextField
               label="Canais de venda"
               type="text"
               name="canaisVenda"
               onChange={valorInput}
             />
+
+            <input
+              type="hidden"
+              name="_next"
+              value="https://pizzaria.criativbox.com.br/cadastrado.html"
+            ></input>
+
+            <input type="hidden" name="_captcha" value="false"></input>
+
+            <br />
           </ThemeProvider>
-
-          <input
-            type="hidden"
-            name="_next"
-            value="https://pizzaria.criativbox.com.br/"
-          ></input>
-
-          <input type="hidden" name="_captcha" value="false"></input>
-
-          <br />
-          <FormRegisterButton type="submit">Enviar</FormRegisterButton>
-        </form>
-      </Box>
+        </Box>
+        <FormRegisterButton type="submit">Enviar</FormRegisterButton>
+      </form>
     </FormRegisterContainer>
   );
 }

@@ -1,6 +1,7 @@
+import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 import {
-  FormRegisterContainer,
-  FormRegisterHeading,
+  FormRegisterThanksContainer,
+  FormRegisterThanksHeading,
   Icon,
   CloseIcon,
 } from './FormRegisterElements';
@@ -13,19 +14,21 @@ function Thanks() {
   
 
   const handleClose = () => {
-    window.location.reload();
+    window.location.href="http://pizzaria.criativbox.com.br/";
   };
 
   return (
-    <FormRegisterContainer>
+    <Route>
+    <FormRegisterThanksContainer>
       <Icon onClick={handleClose}>
         <CloseIcon />
       </Icon>
-      <FormRegisterHeading>
+      <FormRegisterThanksHeading>
         Parabéns sua fatia está quase garantida aguarde nosso contato!
-      </FormRegisterHeading>
+      </FormRegisterThanksHeading>
       <br />
-    </FormRegisterContainer>
+    </FormRegisterThanksContainer>
+    </Route>
   );
 }
 
