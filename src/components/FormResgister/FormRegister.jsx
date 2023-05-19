@@ -181,7 +181,7 @@ function FormRegister() {
             <input
               type="hidden"
               name="_next"
-              value="https://pizzaria.criativbox.com.br/cadastrado.html"
+              value="https://pizzaria.criativbox.com.br/"
             ></input>
 
             <input type="hidden" name="_captcha" value="false"></input>
