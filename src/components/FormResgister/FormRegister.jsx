@@ -25,6 +25,7 @@ function FormRegister() {
   const [data, setData] = useState({
     nomePizzaria: '',
     nomeResponsavel: '',
+    Cnpj: '',
     telefone: '',
     email: '',
     endereco: '',
@@ -119,6 +120,13 @@ function FormRegister() {
               label="Nome do responsável"
               type="text"
               name="nomeResponsavel"
+              onChange={valorInput}
+            />
+
+            <TextField
+              label="CNPJ"
+              type="number"
+              name="cnpj"
               onChange={valorInput}
             />
 
