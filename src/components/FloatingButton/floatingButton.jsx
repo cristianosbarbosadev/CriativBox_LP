@@ -32,7 +32,6 @@ export const FloatingButton = () => {
     <div className="floating-button-wrapper">
       <button className={floatingButtonClass} onClick={handleButtonClick}>
         <FaWhatsapp />
-        {/* Certifique-se de ter o ícone do WhatsApp instalado corretamente */}
       </button>
     </div>
   );

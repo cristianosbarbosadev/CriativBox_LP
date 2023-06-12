@@ -1,34 +1,38 @@
 import React from 'react';
 import {
-	SidebarContainer,
-	Icon,
-	CloseIcon,
-	SidebarMenu,
-	SidebarLink,
-	SideBtnWrap,
-	SidebarRoute,
+  SidebarContainer,
+  Icon,
+  CloseIcon,
+  SidebarMenu,
+  SidebarLink,
+  SideBtnWrap,
+  SidebarRoute,
 } from './SideBarElements';
 import Backdrop from '@mui/material/Backdrop';
 import FormRegister from '../FormResgister/FormRegister';
 
-
 function Sidebar({ isOpen, toggle }) {
+  const [open, setOpen] = React.useState(false);
 
-	const [open, setOpen] = React.useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
 
-	  const handleOpen = () => {
-      setOpen(true);
-    };
+  const handleAnuncieClick = () => {
+    window.open('https://www.criativbox.com.br/', '_blank'); // Redirecione para a página de anúncios
+  };
 
-	return (
+  const handleContatoClick = () => {
+    window.open('https://www.criativbox.com.br/#contact', '_blank'); // Redirecione para a página de contato
+  };
+
+  return (
     <SidebarContainer isOpen={isOpen}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarMenu>
-        <SidebarLink onClick={handleOpen}>
-          Cadastre-se
-        </SidebarLink>
+        <SidebarLink onClick={handleOpen}>Cadastre-se</SidebarLink>
         <Backdrop
           sx={{
             backgroundColor: '#fff',
@@ -40,12 +44,11 @@ function Sidebar({ isOpen, toggle }) {
         >
           <FormRegister />
         </Backdrop>
-
         <SidebarLink to="/">Pizzarias parceiras</SidebarLink>
-        <SidebarLink to="/">Anuncie</SidebarLink>
+        <SidebarLink onClick={handleAnuncieClick}>Anuncie</SidebarLink>
       </SidebarMenu>
       <SideBtnWrap>
-        <SidebarRoute to="/">Contato</SidebarRoute>
+        <SidebarRoute onClick={handleContatoClick}>Contato</SidebarRoute>
       </SideBtnWrap>
     </SidebarContainer>
   );
