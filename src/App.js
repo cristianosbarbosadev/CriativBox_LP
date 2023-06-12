@@ -7,7 +7,7 @@ import Feature from './components/Feature/Feature';
 import Footer from './components/Footer/Footer';
 import Presentation from './components/Presentation/Presentation';
 import { presentationData } from './components/Presentation/data';
-// import FloatingButton from './components/FloatingButton/floatingButton';
+import FloatingButton from './components/FloatingButton/floatingButton';
 
 
 
@@ -16,7 +16,7 @@ function App() {
 	return (
     <Router>
       <GlobalStyle />
-      {/* <FloatingButton /> */}
+      <FloatingButton />
       <Hero />
       <Products heading="Conheça nossos modeloss" data={productData} />
       <Presentation heading="Conheça as vantagens do parceiro" data={presentationData}/>

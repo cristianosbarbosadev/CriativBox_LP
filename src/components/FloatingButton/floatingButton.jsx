@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './FloatingButton.css';
 import { FaWhatsapp } from 'react-icons/fa';
-
-
-
+import { FloatingButtonContainer } from './FloatingButtonElements';
 
 export const FloatingButton = () => {
   const whatsappNumber = '5511939303368';
@@ -24,15 +21,14 @@ export const FloatingButton = () => {
     );
   };
 
-  const floatingButtonClass = isPulsing
-    ? 'floating-button pulsing'
-    : 'floating-button';
-
   return (
     <div className="floating-button-wrapper">
-      <button className={floatingButtonClass} onClick={handleButtonClick}>
+      <FloatingButtonContainer
+        className={isPulsing ? 'pulsing' : ''}
+        onClick={handleButtonClick}
+      >
         <FaWhatsapp />
-      </button>
+      </FloatingButtonContainer>
     </div>
   );
 };
