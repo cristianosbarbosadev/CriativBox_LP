@@ -1,75 +1,34 @@
 import React from 'react';
 import {
-	FaFacebook,
-	FaInstagram,
-	FaYoutube,
-	FaTwitter,
-	FaLinkedin,
+  FaInstagram
 } from 'react-icons/fa';
 import {
-	FooterContainer,
-	FooterWrap,
-	SocialMedia,
-	SocialMediaWrap,
-	SocialLogo,
-	SocialIcons,
-	SocialIconLink,
-	LogoCriativBox,
+  FooterContainer,
+  FooterWrap,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialLogo,
+  SocialIconLink,
+  LogoCriativBox,
 } from './FooterElements';
- import logo from '../../images/Logo_final.png';
-
+import logo from '../../images/Logo_final.png';
 
 function Footer() {
-	
-	return (
+  return (
     <FooterContainer>
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <LogoCriativBox src={logo} alt='Logo'/>
+            <LogoCriativBox src={logo} alt="Logo" />
             <SocialLogo to="/">CriativBox</SocialLogo>
-            <SocialIcons>
-              <SocialIconLink
-                href="/"
-                target="_blank"
-                aria-label="Facebook"
-                rel="noopener noreferrer"
-              >
-                <FaFacebook />
-              </SocialIconLink>
-              <SocialIconLink
-                href="/"
-                target="_blank"
-                aria-label="Instagram"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram />
-              </SocialIconLink>
-              <SocialIconLink
-                href="/"
-                target="_blank"
-                aria-label="YouTube"
-                rel="noopener noreferrer"
-              >
-                <FaYoutube />
-              </SocialIconLink>
-              <SocialIconLink
-                href="/"
-                target="_blank"
-                aria-label="Twitter"
-                rel="noopener noreferrer"
-              >
-                <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink
-                href="/"
-                target="_blank"
-                aria-label="Linkedin"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin />
-              </SocialIconLink>
-            </SocialIcons>
+            <SocialIconLink
+              href="https://www.instagram.com/criativboxmi"
+              target="_blank"
+              aria-label="Instagram"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </SocialIconLink>
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrap>
